@@ -78,6 +78,7 @@ class _HomeState extends State<Home> {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text('Seat Number: $enteredNumber is invalid')));
                           _controller.clear();
+                          enteredNumber=0;
                         }
                       } catch (e) {
                         if (e is FormatException) {
@@ -85,6 +86,7 @@ class _HomeState extends State<Home> {
                           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                               content: Text('Seat Number is invalid')));
                           _controller.clear();
+                          enteredNumber=0;
                         }
                       }
                     });
