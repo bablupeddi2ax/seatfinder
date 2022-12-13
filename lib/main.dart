@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:seatfinder/seatmodel.dart';
-
 import 'layouttest.dart';
 
 void main() => runApp(MyApp());

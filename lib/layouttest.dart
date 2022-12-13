@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//layout
 class Layout extends StatelessWidget {
   const Layout({Key? key, required this.enteredNumber}) : super(key: key);
   final int enteredNumber;
@@ -9,6 +9,7 @@ class Layout extends StatelessWidget {
     return SafeArea(
       child: Center(
           child: ListView.builder(
+            //assuming 9 cells each containing 8(1,2,3,4,5,6,7,8) seats
               itemCount: 9,
               itemBuilder: (context, index) {
                 return Sample(
@@ -34,7 +35,7 @@ class Sample extends StatelessWidget {
     right: BorderSide(width: 2, color: Colors.blueAccent),
     bottom: BorderSide(width: 2, color: Colors.blueAccent),
   );
-  final containerPadding = EdgeInsets.all(2);
+  final containerPadding = const EdgeInsets.all(2);
 
   @override
   Widget build(BuildContext context) {
